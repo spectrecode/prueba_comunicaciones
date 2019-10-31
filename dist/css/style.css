@@ -174,8 +174,8 @@
 .section .section__nav {
   background-color: khaki;
   -webkit-box-flex: 1;
-      -ms-flex: 1 10%;
-          flex: 1 10%;
+      -ms-flex: 1 18%;
+          flex: 1 18%;
   min-height: 150px;
 }
 
@@ -193,8 +193,8 @@
 .section .section__aside {
   background-color: sandybrown;
   -webkit-box-flex: 1;
-      -ms-flex: 1 10%;
-          flex: 1 10%;
+      -ms-flex: 1 18%;
+          flex: 1 18%;
 }
 
 .section .section__aside .section__aside__section {
