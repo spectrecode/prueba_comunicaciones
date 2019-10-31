@@ -1,0 +1,38 @@
+#home{
+    background-image:url('../img/bg_home.png');
+    background-size: cover;
+    .box{
+        & > div{
+            h2{
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+            h1{
+                font-family: 'livvicmedium';
+                font-size: 40px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1024px){
+        background-position-x: 50%;
+    }
+    @media only screen and (max-width: 768px){
+        background-image:url('../img/bg_home_mb.png');
+        background-position-y: center;
+        .box{
+            & > div{
+                h2{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .box{
+            margin-bottom: 150px;
+        }
+    }
+}

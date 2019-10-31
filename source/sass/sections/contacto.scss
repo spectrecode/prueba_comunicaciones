@@ -1,0 +1,79 @@
+#contacto{
+    background-image:url('../img/lienzo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .contacto__box{
+        flex-direction: column;
+        text-align: center;
+        height: 430px;
+        justify-content: flex-start;        
+    }
+    .contacto__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        flex: 1 auto;
+        height: inherit;
+        .hamburguesa{
+            flex: 1 0 30%;
+            margin-bottom: auto;
+            height: 165px;
+            cursor: pointer;
+            position: relative;
+            .burger{
+                width: inherit;
+                transition: ease-in-out .5s;
+                &:hover{
+                    transform:rotateY(180deg);
+                    opacity: 0;
+                    z-index: 1;
+                }
+                &:hover + i{
+                    opacity: 1;
+                    transform:rotateY(360deg);
+                }
+            }
+            .icon{
+                display: flex;
+                width: 85%;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                transition: ease-in-out .5s;
+                i{
+                    position: absolute;
+                    opacity: 0;
+                    font-size: 80px;
+                    transform:rotateY(180deg);
+                    transition: ease-in-out .5s;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px){
+        background-size: 180%;
+        background-position: -162px bottom;
+        .contacto__list {
+            .hamburguesa{
+                height: 126px;
+                .icon{
+                    i{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 375px){
+        .contacto__list {
+            flex-direction: column;
+            .hamburguesa{
+                .icon{
+                    width: 65%;
+                }
+            }
+        }
+    }
+}

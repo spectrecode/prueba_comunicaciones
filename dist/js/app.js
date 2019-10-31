@@ -1,0 +1,1 @@
+url="https://jsonplaceholder.typicode.com/users",$.getJSON(url,function(e){for(var r=0;r<5;r++){var a=e[r].id+"</br>"+e[r].name+"</br>"+e[r].username+"</br>"+e[r].email+"</br>"+e[r].address;$(".section__article__section").append(a)}});

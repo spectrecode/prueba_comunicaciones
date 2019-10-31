@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'livvicthin';
+    src: url('livvic-thin-webfont.eot');
+    src: url('livvic-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-thin-webfont.woff') format('woff'),
+         url('livvic-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicthin_italic';
+    src: url('livvic-thinitalic-webfont.eot');
+    src: url('livvic-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-thinitalic-webfont.woff') format('woff'),
+         url('livvic-thinitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicsemibold';
+    src: url('livvic-semibold-webfont.eot');
+    src: url('livvic-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-semibold-webfont.woff') format('woff'),
+         url('livvic-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'livvicsemibold_italic';
+    src: url('livvic-semibolditalic-webfont.eot');
+    src: url('livvic-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('livvic-semibolditalic-webfont.woff') format('woff'),
+         url('livvic-semibolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

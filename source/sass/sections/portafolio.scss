@@ -1,0 +1,121 @@
+#portafolio{
+    .portafolio__box{
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .mini{
+            flex: 1 30%;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+
+            cursor: pointer;
+            .image{
+                background-image: url('../img/0576.jpg');
+                background-size: cover;
+                height: 214px;
+            }
+            &:hover .filtro{
+                opacity: 0;
+                transition: opacity ease-in-out .3s;
+            }
+            .filtro{
+                transition: opacity ease-in-out .3s;
+                &:after{
+                    content: '';
+                    overflow: hidden;
+                    width: 65%;
+                    max-height: 65px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    background-size: 100%;
+                    background-image: url('../img/logoPotash.png');
+                    background-repeat: no-repeat;
+                }
+                &:before{
+                    content:'';
+                    background-color: rgba(0, 0, 0, 0.72);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                }
+            }
+        }
+        .mini.antonia{
+            .filtro:after{
+               background-image: url('../img/logoAntonia.png');
+               max-height: 50px;
+            }
+            .image{
+                background-image: url('../img/banner_antonia.jpg');
+                background-size: cover;
+            }
+        }
+        .mini.wallon{
+            .filtro:after{
+               background-image: url('../img/logo-wallon.png');
+               max-height: 90px;
+               width: 50%;
+            }
+            .image{
+                background-image: url('../img/walon_1537303663.png');                
+            }
+        }
+        .mini.inca{
+            .filtro:after{
+               background-image: url('../img/logo_inka_reebok.png');
+            }
+            .image{
+                background-image: url('../img/inca-ch.png');
+                background-size: cover;
+                background-position: center;                
+            }
+        }
+        .mini.nokia{
+            .filtro:after{
+               background-image: url('../img/nokialogo.png');
+               max-height: 40px;
+            }
+            .image{
+                background-image: url('../img/imgB1.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .mini.mailing{
+            .filtro:after{
+               background-image: url('../img/movistar-logo-blanco.png');
+               background-position: center;
+               max-height: 90px;
+            }
+            .image{
+                background-image: url('../img/mailing.png');
+                background-size: cover;
+                background-position: center;                
+            }
+        }
+    }
+    @media only screen and (max-width:600px){
+        .portafolio__box {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            .mini{
+                width: 100%;
+                overflow: initial;
+                margin-left: 0;
+                margin-right: 0;
+                .image{
+                    height: 85px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+#habilidades{
+    .habilidades__box{
+        height: calc(100vh - 30%);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .habilidades{
+        &__list{                
+            display: flex;
+            width: 80%;
+            li{
+                list-style: none;
+                flex: 1 25%;
+                align-self: flex-end;
+                text-align: center;
+                margin: 0 10px;
+            }
+        }
+        &__bar{
+            height: 200px;
+            position: relative;
+            clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+            width: inherit;
+            opacity: 0;
+            transition: all .5s ease-in-out .1s;
+            &.animateBar{
+                opacity: 1;
+            }
+        }
+        &__skill{
+            padding: 10px 0;
+            font-family: $f_semi_bold;
+            justify-content: center;
+        }
+    }
+    .habilidades__list{        
+        li:first-child{
+            .habilidades__bar{
+                background-color: #26547C;
+                height: 250px;
+                &.animateBar{
+                    height: 350px;
+                    transition: all .5s ease-in-out .1s;
+                }
+            }
+        }
+        li:nth-child(2){
+            .habilidades__bar{
+                background-color: #EF476F;
+                height: 210px;
+                &.animateBar{                    
+                    height: 310px;
+                    transition: all .5s ease-in-out .2s;               
+                }
+            }
+        }
+        li:nth-child(3){
+            .habilidades__bar{
+                background-color: #FFD166;
+                height: 170px;
+                &.animateBar{                    
+                    height: 270px;
+                    transition: all .5s ease-in-out .3s;                   
+                }
+            }
+        }
+        li:nth-child(4){
+            .habilidades__bar{
+                background-color: #06D6A0;
+                height: 130px;
+                &.animateBar{                    
+                    height: 230px;
+                    transition: all .5s ease-in-out .4s;                  
+                }
+            }
+        }
+        li:nth-child(5){
+            .habilidades__bar{
+                background-color: #c97af5;
+                height: 90px;
+                &.animateBar{                    
+                    height: 190px;
+                    transition: all .5s ease-in-out .5s;                 
+                }
+            }
+        }
+        li:nth-child(6){
+            .habilidades__bar{
+                background-color: #bdbbb7;
+                height: 50px;
+                &.animateBar{                    
+                    height: 150px;
+                    transition: all .5s ease-in-out .6s;                  
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1024px){
+        .habilidades__list{
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 600px){
+        .habilidades{
+            &__list{
+                flex-direction: column;
+                li{
+                    align-self: flex-start;                    
+                }
+            }
+            &__bar{
+                height: 45px !important;                
+                transition: width .5s ease-in-out 1s;                
+            }
+            &__skill{
+                text-align: initial;
+            }
+        }
+        .habilidades__list{
+            li:first-child{
+                .habilidades__bar{
+                    width: 180px;
+                    &.animateBar{
+                        width: 230px;
+                        transition: all .5s ease-in-out .5s;
+                    }
+                }
+            }
+            li:nth-child(2){
+                .habilidades__bar{
+                    width: 150px;
+                    &.animateBar{
+                        width: 200px;
+                        transition: width .5s ease-in-out .6s;
+                    }
+                }
+            }
+            li:nth-child(3){
+                .habilidades__bar{
+                    width: 120px;
+                    &.animateBar{
+                        width: 170px;
+                        transition: width .5s ease-in-out .7s;
+                    }
+                }
+            }
+            li:nth-child(4){
+                .habilidades__bar{
+                    width: 90px;
+                    &.animateBar{
+                        width: 140px;
+                        transition: width .5s ease-in-out .8s;
+                    }
+                }
+            }
+            li:nth-child(5){
+                .habilidades__bar{
+                    width:60px;
+                    &.animateBar{
+                        width: 110px;
+                        transition: width .5s ease-in-out .9s;
+                    }
+                }
+            }
+            li:last-child{
+                .habilidades__bar{
+                    width:30px;
+                    &.animateBar{
+                        width: 80px;
+                        transition: width .5s ease-in-out 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes bar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: calc(100vh - 20rem);
+    }
+}

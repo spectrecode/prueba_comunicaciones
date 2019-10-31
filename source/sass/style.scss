@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 55px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.p20{
+	padding: 20px;
+}
+.body{
+	.hidden{
+		@media only screen and (max-width:768px){
+			display: none;
+		}
+	}
+}
+@import "./sections/header";
